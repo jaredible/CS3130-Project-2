@@ -1,4 +1,4 @@
-package edu.umsl.homework.util;
+package main.util;
 
 public enum OrderType {
 

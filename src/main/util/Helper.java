@@ -1,4 +1,4 @@
-package edu.umsl.homework.util;
+package main.util;
 
 import java.util.Arrays;
 import java.util.stream.Collectors;

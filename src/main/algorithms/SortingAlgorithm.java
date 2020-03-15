@@ -1,15 +1,15 @@
 /*******************************************************************************
  * Copyright (c) 2020 Jared Diehl. All rights reserved.
  *******************************************************************************/
-package edu.umsl.homework.algorithms;
+package main.algorithms;
 
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Random;
-import edu.umsl.homework.util.Constants;
-import edu.umsl.homework.util.OrderType;
-import edu.umsl.homework.util.SizeType;
+import main.util.Constants;
+import main.util.OrderType;
+import main.util.SizeType;
 
 /**
  * @filename SortAlgorithm.java

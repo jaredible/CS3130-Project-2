@@ -1,9 +1,9 @@
-package edu.umsl.homework;
+package main;
 
 import java.util.Map;
-import edu.umsl.homework.algorithms.SortingAlgorithm;
-import edu.umsl.homework.util.OrderType;
-import edu.umsl.homework.util.SizeType;
+import main.algorithms.SortingAlgorithm;
+import main.util.OrderType;
+import main.util.SizeType;
 
 public class Test {
 

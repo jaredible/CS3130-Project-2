@@ -1,4 +1,4 @@
-package edu.umsl.homework;
+package main;
 
 import java.io.File;
 import java.io.FileWriter;
@@ -12,11 +12,11 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
-import edu.umsl.homework.algorithms.SortingAlgorithm;
-import edu.umsl.homework.util.Constants;
-import edu.umsl.homework.util.Helper;
-import edu.umsl.homework.util.OrderType;
-import edu.umsl.homework.util.SizeType;
+import main.algorithms.SortingAlgorithm;
+import main.util.Constants;
+import main.util.Helper;
+import main.util.OrderType;
+import main.util.SizeType;
 
 public class Tester {
 

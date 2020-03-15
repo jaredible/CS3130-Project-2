@@ -1,10 +1,10 @@
 /*******************************************************************************
  * Copyright (c) 2020 Jared Diehl. All rights reserved.
  *******************************************************************************/
-package edu.umsl.homework.algorithms;
+package main.algorithms;
 
-import edu.umsl.homework.util.OrderType;
-import edu.umsl.homework.util.SizeType;
+import main.util.OrderType;
+import main.util.SizeType;
 
 /**
  * @filename MergeSort.java
