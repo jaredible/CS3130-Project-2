@@ -1,10 +1,7 @@
 /*******************************************************************************
  * Copyright (c) 2020 Jared Diehl. All rights reserved.
  *******************************************************************************/
-package main.algorithms;
-
-import main.util.OrderType;
-import main.util.SizeType;
+package main;
 
 /**
  * @filename SelectionSort.java
@@ -17,12 +14,7 @@ import main.util.SizeType;
  */
 public class SelectionSort extends SortingAlgorithm {
 
-  public SelectionSort(Long seed, OrderType orderType, SizeType sizeType) {
-    super(seed, orderType, sizeType);
-  }
-
-  @Override
-  protected void sort() {
+  public static void sort(int[] array) {
     int n = array.length;
     for (int i = 0; i < n - 1; i++) {
       int k = i;
@@ -32,15 +24,6 @@ public class SelectionSort extends SortingAlgorithm {
         }
       }
       swap(array, k, i);
-    }
-  }
-
-  public static void main(String[] args) {
-    for (SizeType sizeType : SizeType.values()) {
-      for (OrderType orderType : OrderType.values()) {
-        SortingAlgorithm sortingAlgorithm = new SelectionSort(Long.valueOf(0), orderType, sizeType);
-        sortingAlgorithm.start();
-      }
     }
   }
 

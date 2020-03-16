@@ -1,10 +1,7 @@
 /*******************************************************************************
  * Copyright (c) 2020 Jared Diehl. All rights reserved.
  *******************************************************************************/
-package main.algorithms;
-
-import main.util.OrderType;
-import main.util.SizeType;
+package main;
 
 /**
  * @filename MergeSort.java
@@ -17,25 +14,20 @@ import main.util.SizeType;
  */
 public class MergeSort extends SortingAlgorithm {
 
-  public MergeSort(Long seed, OrderType orderType, SizeType sizeType) {
-    super(seed, orderType, sizeType);
+  public static void sort(int[] array) {
+    sort(array, 0, array.length - 1);
   }
 
-  @Override
-  protected void sort() {
-    sort(0, array.length - 1);
-  }
-
-  private void sort(int l, int r) {
+  private static void sort(int[] array, int l, int r) {
     if (l < r) {
       int m = l + (r - l) / 2;
-      sort(l, m);
-      sort(m + 1, r);
-      merge(l, m, r);
+      sort(array, l, m);
+      sort(array, m + 1, r);
+      merge(array, l, m, r);
     }
   }
 
-  private void merge(int l, int m, int r) {
+  private static void merge(int[] array, int l, int m, int r) {
     int i, j, k;
     int n1 = m - l + 1;
     int n2 = r - m;
@@ -73,15 +65,6 @@ public class MergeSort extends SortingAlgorithm {
       array[k] = right[j];
       j++;
       k++;
-    }
-  }
-
-  public static void main(String[] args) {
-    for (SizeType sizeType : SizeType.values()) {
-      for (OrderType orderType : OrderType.values()) {
-        SortingAlgorithm sortingAlgorithm = new MergeSort(Long.valueOf(0), orderType, sizeType);
-        sortingAlgorithm.start();
-      }
     }
   }
 
