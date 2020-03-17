@@ -10,6 +10,7 @@ package main;
  * @course CMP SCI 3130
  * @title Project 2
  * @purpose To perform empirical analysis of sorting algorithms.
+ * @notes
  */
 public class SortingAlgorithm {
 
